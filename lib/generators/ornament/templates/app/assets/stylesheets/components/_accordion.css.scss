@@ -1,0 +1,53 @@
+
+$accordion-heading-height: 25px;
+
+.accordion {
+
+  label {
+    position: relative;
+    z-index: 20;
+    display: block;
+    cursor: pointer;
+  }
+
+  // HIDDEN PANE
+
+  input {
+    display: none;
+
+    + label {
+
+      &:hover:after {
+        content: 'down';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 20px;
+        top: 7px;
+      }
+    }
+
+    ~ .accordion--pane {
+      display: none;
+    }
+
+  }
+
+  // VISIBLE
+
+  input:checked {
+
+    + label {
+      font-weight: bold;
+
+      &:hover:after {
+        content: 'up';
+      }
+    }
+
+    ~ .accordion--pane {
+      display: block;
+    }
+
+  }
+}
