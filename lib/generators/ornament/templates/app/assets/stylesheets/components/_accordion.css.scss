@@ -3,6 +3,10 @@ $accordion-heading-height: 25px;
 
 .accordion {
 
+  > div {
+    position: relative;
+  }
+
   label {
     position: relative;
     z-index: 20;
@@ -13,9 +17,16 @@ $accordion-heading-height: 25px;
   // HIDDEN PANE
 
   input {
-    display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $accordion-heading-height;
+    opacity: 0;
 
     + label {
+
 
       &:hover:after {
         content: 'down';
