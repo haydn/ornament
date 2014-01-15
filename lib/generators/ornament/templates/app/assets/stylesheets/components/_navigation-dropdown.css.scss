@@ -1,25 +1,23 @@
 @import "compass/css3/inline-block";
-@import "ornament/utilities/color-link";
-@import "ornament/utilities/decorate-link";
 
 $navigation-dropdown-z-index:               2;
 
-$navigation-dropdown-level-1-active-color:  $link-color;
+$navigation-dropdown-level-1-active-color:  #00aad5;
 $navigation-dropdown-level-1-background:    transparent;
-$navigation-dropdown-level-1-color:         $foreground-color;
-$navigation-dropdown-level-1-hover-color:   $link-color;
-$navigation-dropdown-level-1-padding:       0.2em 0;
-$navigation-dropdown-level-1-spacing:       0.5em;
+$navigation-dropdown-level-1-color:         #333;
+$navigation-dropdown-level-1-hover-color:   #00aad5;
+$navigation-dropdown-level-1-padding:       $xx-small-unit 0;
+$navigation-dropdown-level-1-spacing:       $x-small-unit;
 
 $navigation-dropdown-level-2-active-color:  $navigation-dropdown-level-1-active-color;
-$navigation-dropdown-level-2-background:    #333333;
-$navigation-dropdown-level-2-color:         #ffffff;
+$navigation-dropdown-level-2-background:    #333;
+$navigation-dropdown-level-2-color:         #fff;
 $navigation-dropdown-level-2-hover-color:   $navigation-dropdown-level-1-hover-color;
-$navigation-dropdown-level-2-padding:       0.2em 0.5em;
-$navigation-dropdown-level-2-width:         10em;
+$navigation-dropdown-level-2-padding:       $xx-small-unit $x-small-unit;
+$navigation-dropdown-level-2-width:         $xxx-large-unit;
 
 $navigation-dropdown-level-3-active-color:  $navigation-dropdown-level-2-active-color;
-$navigation-dropdown-level-3-background:    #111111;
+$navigation-dropdown-level-3-background:    #111;
 $navigation-dropdown-level-3-color:         $navigation-dropdown-level-2-color;
 $navigation-dropdown-level-3-hover-color:   $navigation-dropdown-level-2-hover-color;
 $navigation-dropdown-level-3-padding:       $navigation-dropdown-level-2-padding;

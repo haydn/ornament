@@ -3,25 +3,26 @@
 @import "ornament/utilities/color-link";
 @import "ornament/utilities/decorate-link";
 @import "ornament/utilities/font";
-@import "ornament/utilities/typeface";
 
 $button-background-color:           #00aad5;
 $button-border-radius:              0;
 $button-dangerous-background-color: #990000;
 $button-dangerous-foreground-color: #ffffff;
-$button-typeface:                   $bold-font, $base-font-size;
+$button-font:                       $bold-font;
 $button-foreground-color:           #ffffff;
+$button-gauge:                      $default-gauge;
 $button-padding:                    0.5em 0.8em 0.3em;
 $button-secondary-background-color: #333333;
 $button-secondary-foreground-color: #ffffff;
 $button-small-padding:              0.2em 0.5em 0.1em;
-$button-small-typeface:             $bold-font, $base-font-size * 0.8;
+$button-small-gauge:                $small-gauge;
 
 .button {
   @include border-radius($button-border-radius);
   @include color-link($button-foreground-color, $button-foreground-color);
   @include decorate-link(none, none);
-  @include typeface($button-typeface);
+  @include font($button-font);
+  @include gauge($button-gauge);
   @include inline-block;
   background: $button-background-color;
   border: 0;
@@ -44,6 +45,8 @@ $button-small-typeface:             $bold-font, $base-font-size * 0.8;
 }
 
 .button-small {
-  @include typeface($button-small-typeface);
+  @include gauge($button-small-gauge);
   padding: $button-small-padding;
 }
+
+

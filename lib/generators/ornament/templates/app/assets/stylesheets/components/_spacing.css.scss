@@ -1,49 +1,41 @@
-$spacing-xx-tight:  $xx-small-unit;
-$spacing-x-tight:   $x-small-unit;
-$spacing-tight:     $small-unit;
-$spacing-default:   $default-unit;
-$spacing-loose:     $large-unit;
-$spacing-x-loose:   $x-large-unit;
-$spacing-xx-loose:  $xx-large-unit;
-
 .spacing-xx-tight {
   > * + * {
-    margin-top: $spacing-xx-tight;
+    margin-top: $xx-small-unit;
   }
 }
 
 .spacing-x-tight {
   > * + * {
-    margin-top: $spacing-x-tight;
+    margin-top: $x-small-unit;
   }
 }
 
 .spacing-tight {
   > * + * {
-    margin-top: $spacing-tight;
+    margin-top: $small-unit;
   }
 }
 
 .spacing {
   > * + * {
-    margin-top: $spacing-default;
+    margin-top: $default-unit;
   }
 }
 
 .spacing-loose {
   > * + * {
-    margin-top: $spacing-loose;
+    margin-top: $large-unit;
   }
 }
 
 .spacing-x-loose {
   > * + * {
-    margin-top: $spacing-x-loose;
+    margin-top: $x-large-unit;
   }
 }
 
 .spacing-xx-loose {
   > * + * {
-    margin-top: $spacing-xx-loose;
+    margin-top: $xx-large-unit;
   }
 }

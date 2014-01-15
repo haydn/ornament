@@ -1,0 +1,63 @@
+.normalize {
+
+  > * + * {
+    margin-top: $default-unit;
+  }
+
+  a,
+  button {
+    @include decorate-link(none, underline);
+    @include color-link(#00aad5);
+  }
+
+  strong, b {
+    @include font($bold-font);
+  }
+
+  em, i {
+    @include font($italic-font);
+  }
+
+  small {
+    @include gauge($small-gauge);
+  }
+
+  h1 {
+    @include heading-one;
+  }
+
+  h2 {
+    @include heading-two;
+  }
+
+  h3 {
+    @include heading-three;
+  }
+
+  h4 {
+    @include heading-four;
+  }
+
+  h5 {
+    @include heading-five;
+  }
+
+  h6 {
+    @include heading-six;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.2em;
+  }
+
+  ol {
+    list-style-type: decimal;
+    padding-left: 1.2em;
+  }
+
+  table {
+    @include table;
+  }
+
+}

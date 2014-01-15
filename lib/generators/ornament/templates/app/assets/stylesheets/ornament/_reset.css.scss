@@ -19,8 +19,6 @@
 
 * {
   @include box-sizing(border-box);
-  // TODO: Include this:
-  //*behavior: url(/assets/boxsizing.htc);
 }
 
 
@@ -57,12 +55,13 @@ button {
 // FORCED DOCUMENT HEIGHT
 //
 //
-// BODY & HTML elements should always be 100% of the viewports height and width.
+// BODY & HTML elements should always be at least 100% of the viewports height
+// and width.
 //
 
 html, body {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 }
 
 
@@ -90,7 +89,7 @@ img {
 // RESPONSIVE MEDIA
 //
 //
-// Make image, object & iframes scale down when they get squished.
+// Make images, objects & iframes scale down when they get squished.
 //
 
 img, embed, object, video, iframe {

@@ -1,0 +1,42 @@
+////////////////////////////////////////////////////////////////////////////////
+//
+// This file provides a mixins to style headings. It is used by
+// "components/_normalize.css.scss" as well as "components/_heading.css.scss".
+// Should you want to make additional heading styles or variantations on these
+// heading styles you should do so in the "components/_heading.css.scss" file.
+//
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+@mixin heading-one {
+  @include font($major-font);
+  @include gauge($xxxx-large-gauge);
+}
+
+@mixin heading-two {
+  @include font($major-font);
+  @include gauge($xxx-large-gauge);
+}
+
+@mixin heading-three {
+  @include font($minor-font);
+  @include gauge($xx-large-gauge);
+}
+
+@mixin heading-four {
+  @include font($minor-font);
+  @include gauge($x-large-gauge);
+}
+
+@mixin heading-five {
+  @include font($minor-font);
+  @include gauge($large-gauge);
+}
+
+@mixin heading-six {
+  @include font($bold-font);
+  @include gauge($default-gauge);
+}
+
+

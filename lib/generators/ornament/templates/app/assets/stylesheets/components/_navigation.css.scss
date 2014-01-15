@@ -1,21 +1,19 @@
 @import "compass/css3/inline-block";
-@import "ornament/utilities/color-link";
-@import "ornament/utilities/decorate-link";
 
-$navigation-level-1-active-color: $link-color;
+$navigation-level-1-active-color: #00aad5;
 $navigation-level-1-background:   transparent;
-$navigation-level-1-color:        $foreground-color;
-$navigation-level-1-hover-color:  $link-color;
-$navigation-level-1-padding:      0.2em 0.5em;
+$navigation-level-1-color:        #333;
+$navigation-level-1-hover-color:  #00aad5;
+$navigation-level-1-padding:      $xx-small-unit $x-small-unit;
 
 $navigation-level-2-active-color: $navigation-level-1-active-color;
-$navigation-level-2-background:   #222222;
-$navigation-level-2-color:        #ffffff;
+$navigation-level-2-background:   #222;
+$navigation-level-2-color:        #fff;
 $navigation-level-2-hover-color:  $navigation-level-1-hover-color;
 $navigation-level-2-padding:      $navigation-level-1-padding;
 
 $navigation-level-3-active-color: $navigation-level-2-active-color;
-$navigation-level-3-background:   #111111;
+$navigation-level-3-background:   #111;
 $navigation-level-3-color:        $navigation-level-2-color;
 $navigation-level-3-hover-color:  $navigation-level-2-hover-color;
 $navigation-level-3-padding:      $navigation-level-2-padding;

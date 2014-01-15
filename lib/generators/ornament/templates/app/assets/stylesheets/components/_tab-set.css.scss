@@ -1,0 +1,18 @@
+@import "compass/css3/inline-block";
+
+.tab-set--tabs {
+  li {
+    @include inline-block;
+  }
+  a {
+    cursor: pointer;
+  }
+}
+
+.tab-set--tab-active {
+  @include font($bold-font);
+}
+
+.tab-set--pane-inactive {
+  display: none;
+}

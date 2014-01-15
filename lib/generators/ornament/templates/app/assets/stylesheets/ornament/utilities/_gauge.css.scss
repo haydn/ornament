@@ -1,0 +1,9 @@
+@import "font-size";
+@import "line-height";
+
+@mixin gauge($gauge) {
+  @include font-size(nth($gauge, 1));
+  @include line-height(nth($gauge, 2));
+}
+
+

@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
-// This is the base CSS file for your application. Import this into your layout.
+// This is the root CSS file for your application.
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -29,6 +29,7 @@
 @import "components/field";
 @import "components/float";
 @import "components/footer";
+@import "components/gallery";
 @import "components/header";
 @import "components/heading";
 @import "components/island";
@@ -36,15 +37,14 @@
 @import "components/navigation";
 @import "components/navigation-dropdown";
 @import "components/navigation-horizontal";
-@import "components/settings-preview";
+@import "components/normalize";
 @import "components/skip-link";
 @import "components/slider";
 @import "components/spacing";
 @import "components/split";
+@import "components/tab-set";
 @import "components/table";
-@import "components/tabs";
 @import "components/tooltip";
-@import "fotorama";
 
 
 

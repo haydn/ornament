@@ -1,44 +1,32 @@
-$island-background:         #333333;
-$island-color:              #ffffff;
-$island-error-background:   #ffcccc;
-$island-error-color:        $error-color;
-$island-loose-padding:      $default-unit;
-$island-notice-background:  #ffffcc;
-$island-notice-color:       $notice-color;
-$island-padding:            $small-unit;
-$island-success-background: #ccffcc;
-$island-success-color:      $success-color;
-$island-tight-padding:      $x-small-unit;
-
 .island {
-  background: $island-background;
-  color: $island-color;
-  padding: $island-padding;
+  background: #333;
+  color: #fff;
+  padding: $small-unit;
 }
 
 .island-tight {
-  padding: $island-tight-padding;
+  padding: $x-small-unit;
 }
 
 .island-loose {
-  padding: $island-loose-padding;
+  padding: $default-unit;
 }
 
 .island-alert,
 .island-error {
-  background: $island-error-background;
+  background: #fcc;
   border: 1px solid;
-  color: $island-error-color;
+  color: #900;
 }
 
 .island-notice {
-  background: $island-notice-background;
+  background: #ffc;
   border: 1px solid;
-  color: $island-notice-color;
+  color: #990;
 }
 
 .island-success {
-  background: $island-success-background;
+  background: #cfc;
   border: 1px solid;
-  color: $island-success-color;
+  color: #090;
 }

@@ -1,15 +1,23 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
-// This file carefully imports Ornament files in a very specific order.
+// Imports Ornament files in the correct order.
 //
 ////////////////////////////////////////////////////////////////////////////////
 
 
 
 @import "fonts";
+@import "ornament/utilities/color-link";
+@import "ornament/utilities/decorate-link";
+@import "ornament/utilities/font";
+@import "ornament/utilities/font-size";
+@import "ornament/utilities/gauge";
+@import "ornament/utilities/line-height";
 @import "ornament/defaults";
 @import "settings";
 @import "ornament/reset";
 @import "ornament/style";
+@import "mixins/heading";
+@import "mixins/table";
 
 

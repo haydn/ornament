@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 //
-// This file applys some default styles based ont he settings provided.
+// This file applys some default styles based on the settings provided.
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -8,11 +8,6 @@
 
 @import "compass/css3/border-radius";
 @import "compass/css3/inline-block";
-@import "compass/typography/links/hover-link";
-@import "ornament/utilities/color-link";
-@import "ornament/utilities/decorate-link";
-@import "ornament/utilities/font";
-@import "ornament/utilities/typeface";
 
 
 
@@ -23,29 +18,10 @@
 //
 
 body {
-  @include typeface($body-typeface);
-  background: $background-color;
-  color: $foreground-color;
-}
-
-
-
-// STRONG & EM, BOLD & ITALIC AND SMALL
-//
-//
-// Set the defaults for bold and italic in a font-face friendly way.
-//
-
-strong, b {
-  @include font($bold-font);
-}
-
-em, i {
-  @include font($italic-font);
-}
-
-small {
-  @include typeface($small-typeface);
+  @include font($default-font);
+  @include gauge($default-gauge);
+  background: $body-background;
+  color: $body-color;
 }
 
 
@@ -58,19 +34,7 @@ small {
 
 a, button {
   @include decorate-link(none, underline);
-  @include color-link($link-color, $link-hover-color);
-}
-
-
-
-// TABLES
-//
-//
-// Bold TH's for tables.
-//
-
-th {
-  @include font($bold-font);
+  @include color-link($link-color);
 }
 
 
@@ -94,7 +58,8 @@ legend {
 [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"],
 [type="url"], textarea {
   @include border-radius($input-border-radius);
-  @include typeface($input-typeface);
+  @include font($input-font);
+  @include gauge($input-gauge);
   background: $input-background;
   border: $input-border;
   color: $input-color;
@@ -121,7 +86,7 @@ input, select {
 
 input, textarea, keygen, select {
   @include inline-block;
-  font-size: $base-font-size;
+  @include gauge($default-gauge);
 }
 
 textarea {

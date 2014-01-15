@@ -1,10 +1,5 @@
-$table-border: 1px solid #ccc;
-
 .table {
-  td,
-  th {
-    padding: 0.5em 1em;
-  }
+  @include table;
 }
 
 .table-flush {
@@ -22,7 +17,7 @@ $table-border: 1px solid #ccc;
 .table-ruled {
   td,
   th {
-    border-bottom: $table-border;
+    border-bottom: 1px solid #ccc;
   }
 }
 
@@ -31,16 +26,19 @@ $table-border: 1px solid #ccc;
 }
 
 .table-small {
+  @include gauge($small-gauge);
   font-size: 0.8em;
   td,
   th {
-    padding: 0.1em 0.2em;
+    padding: $xxx-small-unit $xx-small-unit;
   }
 }
 
-.table-2-cols {
+.table-two-col {
   td,
   th {
     width: 50%;
   }
 }
+
+
