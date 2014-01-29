@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+category_1:
+  id: 1
+  name: Action
+
+category_2:
+  id: 2
+  name: Comedy

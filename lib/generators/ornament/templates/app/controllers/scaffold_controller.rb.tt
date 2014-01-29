@@ -1,0 +1,72 @@
+class <%= plural_camel %>Controller < ApplicationController
+
+  def index
+    @<%= plural_underscore %> = <%= singular_camel %>.page(params[:page])
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @<%= plural_underscore %> }
+    end
+  end
+
+  def show
+    @<%= singular_underscore %> = <%= singular_camel %>.find(params[:id])
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @<%= singular_underscore %> }
+    end
+  end
+
+  def new
+    @<%= singular_underscore %> = <%= singular_camel %>.new
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @<%= singular_underscore %> }
+    end
+  end
+
+  def edit
+    @<%= singular_underscore %> = <%= singular_camel %>.find(params[:id])
+  end
+
+  def create
+    @<%= singular_underscore %> = <%= singular_camel %>.new(params[:<%= singular_underscore %>])
+
+    respond_to do |format|
+      if @<%= singular_underscore %>.save
+        format.html { redirect_to @<%= singular_underscore %>, notice: '<%= singular_title %> was successfully created.' }
+        format.json { render json: @<%= singular_underscore %>, status: :created, location: @<%= singular_underscore %> }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @<%= singular_underscore %>.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def update
+    @<%= singular_underscore %> = <%= singular_camel %>.find(params[:id])
+
+    respond_to do |format|
+      if @<%= singular_underscore %>.update_attributes(params[:<%= singular_underscore %>])
+        format.html { redirect_to @<%= singular_underscore %>, notice: '<%= singular_title %> was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "edit" }
+        format.json { render json: @<%= singular_underscore %>.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def destroy
+    @<%= singular_underscore %> = <%= singular_camel %>.find(params[:id])
+    @<%= singular_underscore %>.destroy
+
+    respond_to do |format|
+      format.html { redirect_to <%= plural_underscore %>_url }
+      format.json { head :no_content }
+    end
+  end
+
+end

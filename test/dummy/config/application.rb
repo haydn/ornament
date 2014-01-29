@@ -59,6 +59,8 @@ module Dummy
     # Add the generator's assets directory to dummy app's assets path.
     config.paths["app/assets"] << Rails.root.join("../../lib/generators/ornament/templates/app/assets")
     config.paths["app/views"] << Rails.root.join("../../lib/generators/ornament/templates/app/views")
+    config.paths["config/initializers"] << Rails.root.join("../../lib/generators/ornament/templates/config/initializers")
+    config.paths["config/locales"] << Rails.root.join("../../lib/generators/ornament/templates/config/locales")
     config.paths["vendor/assets"] << Rails.root.join("../../lib/generators/ornament/templates/vendor/assets")
 
   end

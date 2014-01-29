@@ -1,0 +1,24 @@
+<% content_for :title, @film.name %>
+
+<% content_for :actions do %>
+  <%= link_to 'Edit', edit_film_path(@film), class: "button" %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <ol class="breadcrumbs">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Films", films_path %></li>
+    <li><%= @film.name %></li>
+  </ol>
+<% end %>
+
+<div class="normalize">
+  <h6>Category</h6>
+  <p>
+    <%= link_to @film.category.name, @film.category %>
+  </p>
+  <h6>Synopsis</h6>
+  <p>
+    <%= @film.synopsis %>
+  </p>
+</div>

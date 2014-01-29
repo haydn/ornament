@@ -1,0 +1,38 @@
+en:
+  errors:
+    # The default format to use in full error messages.
+    format: "%{attribute} - %{message}"
+    # The values :model, :attribute and :value are always available for interpolation
+    # The value :count is available when applicable. Can be used for pluralization.
+    messages:
+      inclusion: "The value \"%{value}\" not included in the list."
+      exclusion: "The value \"%{value}\" is reserved."
+      invalid: "The value \"%{value}\" is invalid."
+      confirmation: "The value doesn't match the field \"%{attribute}\"."
+      accepted: "Must be accepted."
+      empty: "This field cannot be empty."
+      blank: "This field cannot be blank."
+      present: "This field must be blank."
+      too_long: "The value is too long (maximum is %{count} characters)."
+      too_short: "The value is too short (minimum is %{count} characters)."
+      wrong_length: "The value is the wrong length (should be %{count} characters)."
+      not_a_number: "The value is not a number."
+      not_an_integer: "The value must be an integer."
+      greater_than: "The value must be greater than %{count}."
+      greater_than_or_equal_to: "The value must be greater than or equal to %{count}."
+      equal_to: "The value must be equal to %{count}."
+      less_than: "The value must be less than %{count}."
+      less_than_or_equal_to: "The value must be less than or equal to %{count}."
+      other_than: "The value must be other than %{count}."
+      odd: "The value must be odd."
+      even: "The value must be even."
+  simple_form:
+    "yes": 'Yes'
+    "no": 'No'
+    required:
+      text: Required Field
+      mark: "*"
+    error_notification:
+      default_message: >
+        Problems with this form have prevented it from being submitted. Please
+        fix any problems and resubmit the form.

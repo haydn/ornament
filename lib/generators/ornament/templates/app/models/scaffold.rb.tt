@@ -1,0 +1,9 @@
+class <%= singular_camel %> < ActiveRecord::Base
+
+  paginates_per 20
+
+  def to_string
+    "<%= singular_title %> #{id}"
+  end
+
+end

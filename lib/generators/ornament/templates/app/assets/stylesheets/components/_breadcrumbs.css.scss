@@ -1,0 +1,18 @@
+.breadcrumbs {
+  @include gauge($small-gauge);
+  color: #999;
+}
+
+.breadcrumbs a {
+  @include color-link(#999, #999);
+  @include decorate-link(underline, none);
+}
+
+.breadcrumbs > * {
+  display: inline;
+}
+
+.breadcrumbs > * + *:before {
+  content: "/ ";
+  margin: 0 0.2em;
+}

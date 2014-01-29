@@ -1,7 +1,5 @@
 @import "compass/utilities/general/clearfix";
 
-$field-hanging-required-marks:  true;
-
 .field {
   @include pie-clearfix;
 }
@@ -9,13 +7,20 @@ $field-hanging-required-marks:  true;
 .field--label {
   @include font($bold-font);
   display: block;
-  > abbr[title="required"] {
-    @if ($field-hanging-required-marks) {
-      float: left;
-      margin-left: -0.8em;
-    }
-    color: #900;
-  }
+}
+
+.field--label > abbr {
+  margin-left: -0.8em;
+  float: left;
+  color: #900;
+}
+
+.field--collection > * {
+  display: block;
+}
+
+.field--collection > * > input {
+  margin-right: 0.2em;
 }
 
 .field--error {
@@ -25,21 +30,5 @@ $field-hanging-required-marks:  true;
 
 .field--hint {
   @include gauge($small-gauge);
-}
-
-.field-horizontal {
-  .field--label {
-    padding: 5px 0;
-    float: left;
-    width: 20%;
-  }
-  input,
-  select,
-  textarea {
-    width: 80%;
-  }
-  .field--hint,
-  .field--error {
-    clear: both;
-  }
+  color: #666;
 }

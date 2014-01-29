@@ -1,0 +1,176 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+# Text from Wikipedia.
+
+film_1:
+  id: 1
+  category_id: 1
+  name: The Matrix
+  synopsis: >
+    Thomas Anderson is a computer programmer who maintains a double life as the
+    hacker "Neo". Infamous hacker Trinity contacts Neo and informs him that a
+    man named Morpheus can tell him the meaning of "the Matrix", a cryptic
+    phrase he has uncovered; however, three dark-suited Agents, led by Agent
+    Smith, appear determined to prevent this. Neo eventually meets Morpheus,
+    who warns that once he shows Neo the Matrix, he will not be able to "go
+    back". Neo accepts by choosing an offered red pill; his reality soon
+    disintegrates and he abruptly wakes, naked and weak, in a liquid-filled
+    vessel, finding himself one of billions of people connected by cables to an
+    elaborate electrical system. He is rescued and brought aboard Morpheus'
+    levitating ship, the Nebuchadnezzar.
+
+film_2:
+  id: 2
+  category_id: 1
+  name: The Terminator
+  synopsis: >
+    In 2029, artificially intelligent machines are attempting to exterminate
+    what is left of the human race. Two beings from this era travel back in
+    time to 1984 Los Angeles: One is a Terminator (Arnold Schwarzenegger), a
+    cyborg assassin programmed to kill an 18 year old woman named Sarah Connor
+    (Linda Hamilton); the other is Kyle Reese (Michael Biehn), a human
+    resistance fighter sent to protect her. After the Terminator kills two
+    other Sarah Connors listed in the telephone directory, it eventually tracks
+    down its target to a nightclub. Kyle shows up and saves Sarah from the
+    Terminator's attack and the two make an escape. Kyle explains that in the
+    near future an artificial intelligence defense network called Skynet will
+    become self-aware and initiate a nuclear holocaust of mankind.
+
+film_3:
+  id: 3
+  category_id: 1
+  name: Die Hard
+  synopsis: >
+    On Christmas Eve, New York City Police officer John McClane arrives in Los
+    Angeles to reconcile with his estranged wife, Holly. McClane is driven to
+    the Nakatomi Plaza building for a company Christmas party by Argyle. While
+    McClane changes clothes, the party is disrupted by the arrival of Hans
+    Gruber and his heavily armed group: Karl, Franco, Tony, Theo, Alexander,
+    Marco, Kristoff, Eddie, Uli, Heinrich, Fritz, and James. The group seize
+    the tower and secure those inside as hostages except for McClane who
+    manages to slip away, armed only with a service pistol. Gruber singles out
+    Nakatomi executive Joseph Takagi claiming he intends to teach the
+    Corporation a lesson for its greed. Away from the other hostages, Gruber
+    interrogates Takagi for the code to the building's vault as McClane
+    secretly observes. Gruber admits that they are using terrorism as a
+    distraction while they attempt to steal $640 million in bearer bonds in the
+    vault. Takagi refuses to cooperate and is executed by Gruber. McClane
+    accidentally gives himself away and is pursued by Tony.
+
+film_4:
+  id: 4
+  category_id: 1
+  name: Mission Impossible
+  synopsis: >
+    Ethan Hunt (Tom Cruise) is part of an Impossible Missions Force (IMF) team
+    led by Jim Phelps (Jon Voight) to prevent the theft of the non-official
+    cover (NOC) list from the American embassy in Prague. The mission goes
+    hopelessly wrong, with several team members killed and the NOC list stolen.
+    Hunt sees Phelps, via Phelps' video glasses, being shot, and Phelps' wife
+    Claire (Emmanuelle Béart) die in a car bomb, leaving him the only living
+    member. Hunt later regroups with IMF director Eugene Kittridge (Henry
+    Czerny) to debrief, but learns that the job was a setup and the NOC list a
+    fake by IMF to lure out a mole within IMF, who IMF believed would sell the
+    NOC list to an arms dealer known as "Max" as part of "Job 314". As Hunt is
+    the only member left, Kittridge suspects him of being the mole, but Hunt
+    creates a distraction to flee before his capture. Hunt returns to the
+    Prague safehouse and realizes "Job 314" refers to the Bible verse, Job
+    3:14, with "Job" as an agent of Max. He is able to communicate with Max via
+    online Bible forums, and arranges a meeting. Hunt is taken to Max (Vanessa
+    Redgrave), and warns her the NOC list she possesses has a tracking device
+    that will lure the CIA there, while promising to deliver the real NOC list
+    for $10 million and the identity of Job.
+
+film_5:
+  id: 5
+  category_id: 1
+  name: Aliens
+  synopsis: >
+    Ellen Ripley (Sigourney Weaver), the only survivor of the space freighter
+    Nostromo, is rescued and revived after drifting for 57 years in stasis. At
+    an interview before a panel of executives from her employer, the
+    Weyland-Yutani Corporation, her testimony regarding the Alien is met with
+    extreme skepticism as she has no physical evidence. Ripley loses her
+    space-flight license as a result of her "questionable judgment" and learns
+    that LV-426, the planet where her crew first encountered the Alien eggs, is
+    now home to a terraforming colony. Some time later, Ripley, now working as
+    a cargo-loader, is visited by Weyland-Yutani representative Carter Burke
+    (Paul Reiser) and Lieutenant Gorman (William Hope) of the Colonial Marines,
+    who inform her that contact has been lost with the colony on LV-426. The
+    company decides to dispatch Burke and a unit of space marines to
+    investigate, and offers to restore Ripley's flight status and pick up her
+    contract if she will accompany them as an advisor.
+
+film_6:
+  id: 6
+  category_id: 1
+  name: Predator
+  synopsis: >
+    An alien spacecraft enters the Earth's atmosphere and jettisons a pod,
+    which descends into a Central American jungle. Later, Major Alan "Dutch"
+    Schaefer (Arnold Schwarzenegger) arrives in the same area with his elite
+    team for an operation to rescue a presidential cabinet minister who had
+    been abducted by guerrilla forces. The team consists of Mac Eliot (Bill
+    Duke), Blain Cooper (Jesse Ventura), Billy Sole (Sonny Landham), Jorge
+    "Poncho" Ramirez (Richard Chaves), and Rick Hawkins (Shane Black). Dutch's
+    old military friend George Dillon (Carl Weathers), now working for the CIA,
+    accompanies them as a liaison. The team is inserted into the jungle by
+    helicopter and begins its hunt.
+
+film_7:
+  id: 7
+  category_id: 1
+  name: Inception
+  synopsis: >
+    Dominick "Dom" Cobb (Leonardo DiCaprio) and business partner Arthur (Joseph
+    Gordon-Levitt) are "extractors", people who perform corporate espionage
+    using an experimental military technology to infiltrate the subconscious of
+    their targets and extract information while experiencing shared dreaming.
+    Their latest target is Japanese businessman Saito (Ken Watanabe). Tiered
+    "dream within a dream" strategies are used and dreamers awaken by a "kick"
+    such as falling. They must avoid "projections" (people who inhabit the
+    dream) since they will try to awaken the extractors to expell them from the
+    dream. If the dreamer is the one who awakens, the dream "collapses". Each
+    extractor carries a totem, a small object whose behavior only its owner can
+    predict, used to determine whether a dreamer is in someone else's dream.
+    Cobb's totem is implied to be a spinning top that spins perpetually in the
+    dream state. The extraction from Saito fails when sabotaged by a memory of
+    Cobb's deceased wife Mal (Marion Cotillard).
+
+film_8:
+  id: 8
+  category_id: 2
+  name: "Anchorman: The Legend of Ron Burgundy"
+  synopsis: >
+    In the mid-1970s, Ron Burgundy (Will Ferrell) is the famous anchorman for a
+    local San Diego television station, fictional KVWN channel 4. He works
+    alongside his friends on the news team: lead field reporter Brian Fantana
+    (Paul Rudd), sportscaster Champ Kind (David Koechner), and intellectually
+    disabled chief meteorologist Brick Tamland (Steve Carell). Station director
+    Ed Harken (Fred Willard) notifies the team that they have maintained their
+    long-held status as the highest-rated news program in San Diego, leading
+    them to throw a wild party, where Ron unsuccessfully tries to pick up a
+    beautiful, blonde woman (Christina Applegate). Ed later informs the team
+    that they have been forced to hire Veronica Corningstone, the same woman
+    whom Ron tried to pick up. After a series of inept attempts by the team to
+    seduce her, she finally relents and consents to a "professional tour" of
+    the city with Ron, culminating in a sexual relationship. Despite agreeing
+    to keep the relationship discreet, Ron announces it on air.
+
+film_9:
+  id: 9
+  category_id: 2
+  name: American Pie
+  synopsis: >
+    Four good friends from western Michigan, high school seniors, Kevin Myers
+    (Thomas Ian Nicholas), a confident student with a girlfriend named Vicky
+    (Tara Reid); Chris "Oz" Ostreicher (Chris Klein), a member of the high
+    school lacrosse team; Jim Levenstein (Jason Biggs), an awkward and sexually
+    naïve character whose dad (Eugene Levy) attempts to offer sexual advice
+    including purchasing and giving him pornography; and Paul Finch (Eddie Kaye
+    Thomas), a cappuccino-drinking sophisticate and a nerd, make a pact, at
+    Kevin's initiation, to lose their virginity before their high school
+    graduation after a dorky classmate, Chuck Sherman (Chris Owen), claims to
+    have done so at a party hosted by Steve Stifler (Seann William Scott), an
+    ignorant and obnoxious lacrosse player who happens to be a close friend to
+    the main four boys.

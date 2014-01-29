@@ -1,0 +1,137 @@
+@import "compass/css3/inline-block";
+@import "compass/utilities/general/clearfix";
+
+$pagination-gauge: $default-gauge;
+$pagination-line-height: line-height(nth($pagination-gauge, 2));
+
+.pagination {
+  @include gauge($pagination-gauge);
+  background: #eee;
+  overflow: hidden;
+  padding: $small-unit;
+  text-transform: uppercase;
+}
+
+.pagination--pages {
+  float: left;
+  text-align: center;
+  width: 40%;
+}
+
+.pagination--jumps {
+  font: 0;
+  float: left;
+  width: 30%;
+}
+
+.pagination--jumps > * + * {
+  margin-left: $small-unit;
+}
+
+.pagination--jumps-forward {
+  text-align: right;
+}
+
+.pagination--jump {
+  @include inline-block;
+  @include gauge($pagination-gauge);
+  min-height: 14px;
+  min-width: 12px;
+}
+
+.pagination--jump > *:before {
+  background: transparent image-url("components/pagination--jump.png") no-repeat;
+  content: " ";
+  display: block;
+  height: 14px;
+  margin-top: ($pagination-line-height - 14px) / 2 - 1;
+  width: 12px;
+}
+
+.pagination--jump-back > *:before {
+  float: left;
+  margin-right: $xx-small-unit;
+}
+
+.pagination--jump-forward > *:before {
+  float: right;
+  margin-left: $xx-small-unit;
+}
+
+.pagination--jump-back-first {
+  & > *:before {
+    background-position: 0 0;
+  }
+  & > *:hover:before {
+    background-position: -12px 0;
+  }
+  &.pagination--jump-disabled > *:before,
+  &.pagination--jump-disabled > *:hover:before {
+    background-position: -24px 0;
+  }
+}
+
+.pagination--jump-back-prev {
+  & > *:before {
+    background-position: 0 -14px;
+  }
+  & > *:hover:before {
+    background-position: -12px -14px;
+  }
+  &.pagination--jump-disabled > *:before,
+  &.pagination--jump-disabled > *:hover:before {
+    background-position: -24px -14px;
+  }
+}
+
+.pagination--jump-forward-next {
+  & > *:before {
+    background-position: 0 -28px;
+  }
+  & > *:hover:before {
+    background-position: -12px -28px;
+  }
+  &.pagination--jump-disabled > *:before,
+  &.pagination--jump-disabled > *:hover:before {
+    background-position: -24px -28px;
+  }
+}
+
+.pagination--jump-forward-last {
+  & > *:before {
+    background-position: 0 -42px;
+  }
+  & > *:hover:before {
+    background-position: -12px -42px;
+  }
+  &.pagination--jump-disabled > *:before,
+  &.pagination--jump-disabled > *:hover:before {
+    background-position: -24px -42px;
+  }
+}
+
+.pagination--jump-disabled {
+  color: #ccc;
+}
+
+@media screen and (max-width: $layout-breakpoint) {
+
+  .pagination--pages {
+    width: 60%;
+  }
+
+  .pagination--page {
+    padding: 0 $x-small-unit;
+  }
+
+  .pagination--jumps {
+    width: 20%;
+  }
+
+  .pagination--jump > * {
+    display: block;
+    text-align: left;
+    text-indent: -9999px;
+  }
+
+}

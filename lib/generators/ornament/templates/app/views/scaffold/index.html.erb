@@ -1,0 +1,55 @@
+<%% content_for :title, <%= plural_title %> %>
+
+<%% content_for :actions do %>
+  <%%= link_to "New <%= singular_title %>", new_<%= singular_underscore %>_path, class: "button" %>
+<%% end %>
+
+<%% content_for :breadcrumbs do %>
+  <ol class="breadcrumbs">
+    <li><%%= link_to "Home", root_path %></li>
+    <li><%= plural_title %></li>
+  </ol>
+<%% end %>
+
+<div class="spacing-loose">
+
+  <ul>
+    <%% @<%= plural_underscore %>.each do |<%= singular_underscore %>| %>
+      <li><%%= link_to <%= singular_underscore %>.to_string, <%= singular_underscore %> %></li>
+    <%% end %>
+  </ul>
+
+  <%%= paginate @<%= plural_underscore %> %>
+
+</div>
+
+
+
+
+<h1>Listing <%= plural_table_name %></h1>
+
+<table>
+  <tr>
+<% attributes.each do |attribute| -%>
+    <th><%= attribute.human_name %></th>
+<% end -%>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<%% @<%= plural_table_name %>.each do |<%= singular_table_name %>| %>
+  <tr>
+<% attributes.each do |attribute| -%>
+    <td><%%= <%= singular_table_name %>.<%= attribute.name %> %></td>
+<% end -%>
+    <td><%%= link_to 'Show', <%= singular_table_name %> %></td>
+    <td><%%= link_to 'Edit', edit_<%= singular_table_name %>_path(<%= singular_table_name %>) %></td>
+    <td><%%= link_to 'Destroy', <%= singular_table_name %>, <%= key_value :method, ":delete" %>, <%= key_value :data, "{ #{key_value :confirm, "'Are you sure?'"} }" %> %></td>
+  </tr>
+<%% end %>
+</table>
+
+<br />
+
+<%%= link_to 'New <%= human_name %>', new_<%= singular_table_name %>_path %>

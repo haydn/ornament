@@ -1,9 +1,26 @@
-@mixin line-height($value: false) {
+@function line-height($value: false) {
+
   $font-size: $default-font-size;
   $font-size: 16px !default;
   $line-height: $default-line-height;
   $line-height: 1.5 !default;
-  line-height: if($value, $value, $font-size * $line-height);
+
+  @if $value {
+    @if unitless($value) {
+      @return $value * $font-size;
+    }
+    @else {
+      @return $value;
+    }
+  }
+  @else {
+    @return $font-size * $line-height;
+  }
+
+}
+
+@mixin line-height($value: false) {
+  line-height: line-height($value);
 }
 
 

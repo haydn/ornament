@@ -3,29 +3,21 @@ Contributing to Ornament
 
 ## Working with the Dummy App
 
-The dummy app's "app/assets" configuration includes this path:
+The dummy app has these additional configuration paths setup:
 
-    ../../lib/generators/ornament/templates/app/assets
+    app/assets          - ../../lib/generators/ornament/templates/app/assets
+    app/views           - ../../lib/generators/ornament/templates/app/views
+    config/initializers - ../../lib/generators/ornament/templates/config/initializers
+    config/locales      - ../../lib/generators/ornament/templates/config/locales
+    vendor/assets       - ../../lib/generators/ornament/templates/vendor/assets
 
-The dummy app's "app/views" configuration includes this path:
+This means when you're running the dummy app you can see changes made in the
+generator template directory without re-running the generator.
 
-    ../../lib/generators/ornament/templates/app/views
+The one exception is the `_defaults.css.scss` file. If you make changes to this
+file you'll need to re-run the settings generator:
 
-The dummy app's "vendor/assets" configuration includes this path:
-
-    ../../lib/generators/ornament/templates/vendor/assets
-
-This means you can modify the files in the generator template and see the
-changes in the test app without re-running the generator.
-
-However, you'll need to re-run the generator if you make changes to this file:
-
-    lib/generators/ornament/templates/app/assets/ornament/_defaults.css.scss
-
-When you run the generator, use this command to ensure you only regenerate the
-settings files:
-
-    rails g ornament --development -f
+    rails g ornament:settings -f
 
 ## JavaScript Guidelines
 

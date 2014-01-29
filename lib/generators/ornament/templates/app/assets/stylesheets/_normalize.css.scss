@@ -1,0 +1,49 @@
+@mixin h1 {
+  @include font($major-font);
+  @include gauge($xxxx-large-gauge);
+}
+
+@mixin h2 {
+  @include font($major-font);
+  @include gauge($xxx-large-gauge);
+}
+
+@mixin h3 {
+  @include font($minor-font);
+  @include gauge($xx-large-gauge);
+}
+
+@mixin h4 {
+  @include font($minor-font);
+  @include gauge($x-large-gauge);
+}
+
+@mixin h5 {
+  @include font($minor-font);
+  @include gauge($large-gauge);
+}
+
+@mixin h6 {
+  @include font($bold-font);
+  @include gauge($default-gauge);
+}
+
+@mixin table {
+  tr > * {
+    border-bottom: 1px solid #ccc;
+    padding: $xx-small-unit $x-small-unit;
+  }
+  th {
+    @include font($bold-font);
+  }
+}
+
+@mixin ul {
+  list-style-type: disc;
+  padding-left: 1.2em;
+}
+
+@mixin ol {
+  list-style-type: decimal;
+  padding-left: 1.2em;
+}

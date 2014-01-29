@@ -1,0 +1,21 @@
+<%= content_for :title, "New Film" %>
+
+<% content_for :breadcrumbs do %>
+  <ol class="breadcrumbs">
+    <li><%= link_to "Home", root_path %></li>
+    <li><%= link_to "Films", films_path %></li>
+    <li>New</li>
+  </ol>
+<% end %>
+
+<%= simple_form_for @film do |f| %>
+  <%= f.error_notification %>
+  <%= f.association :category %>
+  <%= f.association :category, as: :radio_buttons %>
+  <%= f.input :name %>
+  <%= f.input :synopsis, hint: "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>".html_safe %>
+  <div>
+    <%= f.button :submit, value: "Save" %>
+    <%= link_to "Cancel", f.object.class, class: "button button-secondary" %>
+  </div>
+<% end %>

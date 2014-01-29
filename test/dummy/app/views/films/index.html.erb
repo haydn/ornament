@@ -1,0 +1,24 @@
+<% content_for :title, "Films" %>
+
+<% content_for :actions do %>
+  <%= link_to 'New Film', new_film_path, class: "button" %>
+<% end %>
+
+<% content_for :breadcrumbs do %>
+  <ol class="breadcrumbs">
+    <li><%= link_to "Home", root_path %></li>
+    <li>Films</li>
+  </ol>
+<% end %>
+
+<div class="spacing-loose">
+
+  <ul>
+    <% @films.each do |film| %>
+      <li><%= link_to film.name, film %></li>
+    <% end %>
+  </ul>
+
+  <%= paginate @films %>
+
+</div>

@@ -1,7 +1,11 @@
-@mixin font-size($value: 1) {
+@function font-size($value: 1) {
   $font-size: $default-font-size;
   $font-size: 16px !default;
-  font-size: if(unitless($value), $font-size * $value, $value);
+  @return if(unitless($value), $font-size * $value, $value);
+}
+
+@mixin font-size($value: 1) {
+  font-size: font-size($value);
 }
 
 

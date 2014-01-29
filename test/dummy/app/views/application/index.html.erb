@@ -1,0 +1,15 @@
+<% flash.each do |name, message| %>
+  <%= content_tag :div, message, class: [ "island", "island-#{name}" ] %>
+<% end %>
+
+<div class="spacing-loose">
+
+  <h1 class="heading-one">Home</h1>
+
+  <ul class="list-unordered">
+    <li><%= link_to "Categories", categories_path %></li>
+    <li><%= link_to "Films", films_path %></li>
+    <li><%= link_to "Styleguide", styleguide_path %></li>
+  </ul>
+
+</div>

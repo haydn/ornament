@@ -1,25 +1,25 @@
 .heading-one {
-  @include heading-one;
+  @include h1;
 }
 
 .heading-two {
-  @include heading-two;
+  @include h2;
 }
 
 .heading-three {
-  @include heading-three;
+  @include h3;
 }
 
 .heading-four {
-  @include heading-four;
+  @include h4;
 }
 
 .heading-five {
-  @include heading-five;
+  @include h5;
 }
 
 .heading-six {
-  @include heading-six;
+  @include h6;
 }
 
 
